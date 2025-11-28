@@ -33,6 +33,10 @@
     <!-- Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">Navegação</div>
+        <a class="nav-item" onclick="showSection('team', this)">
+            <span class="nav-icon">👥</span>
+            <span>Equipe</span>
+        </a>
         <a class="nav-item active" onclick="showSection('overview', this)">
             <span class="nav-icon">📄</span>
             <span>Visão Geral</span>
@@ -45,13 +49,9 @@
             <span class="nav-icon">💻</span>
             <span>Metodologia</span>
         </a>
-        <a class="nav-item" onclick="showSection('team', this)">
-            <span class="nav-icon">👥</span>
-            <span>Equipe</span>
-        </a>
         <a class="nav-item" onclick="showSection('results', this)">
             <span class="nav-icon">📊</span>
-            <span>Resultados</span>
+            <span>KPI's</span>
         </a>
     </aside>
 
@@ -152,46 +152,160 @@
         <!-- Methodology Section -->
         <div id="methodology" class="content-section">
             <div class="card">
-                <h3 class="card-title">Tecnologias Utilizadas</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">React</div>
-                    <div class="tech-item">Node.js</div>
-                    <div class="tech-item">PostgreSQL</div>
-                    <div class="tech-item">Docker</div>
-                    <div class="tech-item">AWS</div>
-                    <div class="tech-item">TypeScript</div>
-                    <div class="tech-item">Redux</div>
-                    <div class="tech-item">Jest</div>
-                </div>
+                <h2 class="card-title">Metodologia do Projeto: Desenvolvimento Ágil com DevOps</h2>
+                <p class="card-text">
+                    O projeto EduSense será conduzido utilizando uma <strong>metodologia Ágil (Scrum)</strong>, combinada com práticas de <strong>DevOps</strong> para garantir entrega contínua, qualidade e escalabilidade na infraestrutura AWS.
+                </p>
             </div>
+
             <div class="card">
-                <h3 class="card-title">Fases do Projeto</h3>
+                <h3 class="card-title">1. Metodologia Central: Ágil (Scrum)</h3>
+                <p class="card-text">
+                    O desenvolvimento será dividido em ciclos curtos e iterativos, focando em entregas funcionais rápidas.
+                </p>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">📅</div>
+                        <div class="objective-text"><strong>Sprints:</strong> O projeto será organizado em sprints de 2 a 4 semanas.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">📋</div>
+                        <div class="objective-text"><strong>Backlog do Produto:</strong> Lista priorizada de todos os Requisitos Funcionais (RFs) e Não Funcionais (RNFs) a serem implementados.</div>
+                    </div>
+                </div>
+                <p class="card-text" style="margin-top: 20px;"><strong>Cerimônias Principais:</strong></p>
+                <ul class="card-text">
+                    <li><strong>Planejamento da Sprint:</strong> Definição das tarefas a serem entregues no ciclo.</li>
+                    <li><strong>Daily Scrum:</strong> Reunião de 15 minutos para sincronização da equipe, identificação de impedimentos e acompanhamento do progresso.</li>
+                    <li><strong>Revisão da Sprint:</strong> Apresentação e demonstração das funcionalidades concluídas aos Stakeholders.</li>
+                    <li><strong>Retrospectiva da Sprint:</strong> Análise do processo de trabalho para melhoria contínua.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">2. Fases de Execução e Ciclo de Vida</h3>
+                <p class="card-text">O desenvolvimento de cada funcionalidade seguirá o seguinte fluxo:</p>
                 <div class="phase-list">
                     <div class="phase-item">
                         <div class="phase-number">1</div>
-                        <div class="phase-name">Análise de Requisitos</div>
-                        <div class="phase-status">Concluído</div>
+                        <div class="phase-name">Análise e Design</div>
+                        <div class="phase-status">Detalhamento dos requisitos e definição da arquitetura</div>
                     </div>
                     <div class="phase-item">
                         <div class="phase-number">2</div>
-                        <div class="phase-name">Design e Prototipação</div>
-                        <div class="phase-status">Concluído</div>
+                        <div class="phase-name">Desenvolvimento</div>
+                        <div class="phase-status">Codificação da API, front-end e módulos ML</div>
                     </div>
                     <div class="phase-item">
                         <div class="phase-number">3</div>
-                        <div class="phase-name">Desenvolvimento</div>
-                        <div class="phase-status">Concluído</div>
+                        <div class="phase-name">Testes e Validação</div>
+                        <div class="phase-status">Testes unitários, integração e desempenho</div>
                     </div>
                     <div class="phase-item">
                         <div class="phase-number">4</div>
-                        <div class="phase-name">Testes</div>
-                        <div class="phase-status">Concluído</div>
+                        <div class="phase-name">Implantação (CI/CD)</div>
+                        <div class="phase-status">Deploy automatizado em ambientes AWS</div>
                     </div>
-                    <div class="phase-item">
-                        <div class="phase-number">5</div>
-                        <div class="phase-name">Implantação</div>
-                        <div class="phase-status">Concluído</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">3. Abordagem de Machine Learning</h3>
+                <p class="card-text">
+                    A parte de Inteligência Artificial será desenvolvida em um ciclo específico:
+                </p>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">🗂️</div>
+                        <div class="objective-text"><strong>Coleta e Preparação de Dados (AWS Glue / S3):</strong> Limpeza, transformação e categorização dos dados de desempenho escolar e humor.</div>
                     </div>
+                    <div class="objective-item">
+                        <div class="objective-number">🧠</div>
+                        <div class="objective-text"><strong>Treinamento e Modelagem (Amazon SageMaker):</strong> Seleção de algoritmos (Regressão Logística, Random Forest, Redes Neurais), treinamento do modelo preditivo de Risco de Evasão (acurácia mínima de 75%) e ajuste de hiperparâmetros.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">🚀</div>
+                        <div class="objective-text"><strong>Implantação do Modelo:</strong> O modelo final será disponibilizado como um endpoint acessível pela API principal (via Amazon SageMaker Endpoint), permitindo análises em tempo real.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">4. Práticas DevOps e AWS</h3>
+                <p class="card-text">
+                    Serão implementadas práticas de integração e entrega contínuas para garantir disponibilidade e escalabilidade.
+                </p>
+                <div class="tech-grid">
+                    <div class="tech-item">AWS CloudFormation</div>
+                    <div class="tech-item">Terraform</div>
+                    <div class="tech-item">AWS CodePipeline</div>
+                    <div class="tech-item">Amazon SageMaker</div>
+                    <div class="tech-item">AWS S3</div>
+                    <div class="tech-item">AWS Glue</div>
+                    <div class="tech-item">Amazon CloudWatch</div>
+                    <div class="tech-item">AWS IAM</div>
+                    <div class="tech-item">AWS KMS</div>
+                    <div class="tech-item">RDS/DynamoDB</div>
+                </div>
+                <div style="margin-top: 20px;" class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">⚙️</div>
+                        <div class="objective-text"><strong>Infraestrutura como Código (IaC):</strong> Uso de AWS CloudFormation ou Terraform para gerenciar e provisionar a infraestrutura AWS de forma repetível e documentada.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">🔄</div>
+                        <div class="objective-text"><strong>Integração Contínua (CI):</strong> Processos automáticos (AWS CodePipeline) para construir e testar o código a cada modificação.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">📦</div>
+                        <div class="objective-text"><strong>Entrega Contínua (CD):</strong> Implantação automática das versões aprovadas no ambiente de produção.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">📊</div>
+                        <div class="objective-text"><strong>Monitoramento:</strong> Uso do Amazon CloudWatch para monitorar logs, performance e uptime do sistema.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Resumo do Ciclo Metodológico</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+                        <thead>
+                        <tr style="background-color: #ff9900; color: white;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">FASE</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">OBJETIVO PRINCIPAL</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">FERRAMENTAS/PRÁTICAS</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Inicialização</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Definição de escopo e MVP</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Kick-off, Reunião de Stakeholders</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Iteração (Sprints)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Entregar funcionalidades incrementais</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Scrum (Planejamento, Daily, Review, Retro)</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">ML/IA</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Treinamento, validação e deployment do modelo preditivo</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Amazon SageMaker, Dados S3/Glue</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Operação</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Implantação e monitoramento contínuo</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">DevOps, CI/CD, AWS CloudWatch</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Segurança</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Garantir a LGPD e a privacidade</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">AWS IAM, AWS KMS, Testes de Segurança</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -239,18 +353,18 @@
                         </div>
                     </div>
                 </div>
-            <div class="card">
-                <div class="team-member">
-                    <div class="member-avatar">NV</div>
-                    <div class="member-info">
+                <div class="card">
+                    <div class="team-member">
+                        <div class="member-avatar">NV</div>
+                        <div class="member-info">
                         <div class="member-name">Natalia Viana</div>
                         <div class="member-role">Análise de Dados</div>
                         <a href="https://www.linkedin.com/in/nataliaberbetviana/" class="member-email">nataliaberbetviana</a>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="team-member">
+                <div class="card">
+                    <div class="team-member">
                     <div class="member-avatar">YX</div>
                     <div class="member-info">
                         <div class="member-name">Yara Xavier</div>
@@ -259,71 +373,99 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
 
-        <!-- Results Section -->
+        <!-- results Section -->
         <div id="results" class="content-section">
             <div class="card">
-                <h3 class="card-title">Principais Conquistas</h3>
-                <div class="progress-list">
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <span>Redução de tempo administrativo</span>
-                            <span class="progress-value">60%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 60%"></div>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <span>Satisfação dos usuários</span>
-                            <span class="progress-value">92%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 92%"></div>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <span>Cobertura de testes</span>
-                            <span class="progress-value">85%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="progress-item">
-                        <div class="progress-header">
-                            <span>Performance (tempo de resposta)</span>
-                            <span class="progress-value">&lt; 200ms</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="card-title">🚫 O que Está Fora do Escopo da API</h2>
+                <p class="card-text">
+                    Para garantir expectativas claras e o foco da ferramenta, a API não:
+                </p>
+                <ul class="card-text">
+                    <li><strong>Substitui Profissionais:</strong> Não substitui as funções de professores, pedagogos ou psicólogos.</li>
+                    <li><strong>Decisão Humana:</strong> Não realiza tomada de decisão automatizada sem supervisão humana.</li>
+                    <li><strong>Foco em Insights:</strong> Fornece dados e insights preditivos, não define intervenções pedagógicas.</li>
+                    <li><strong>Anonimização:</strong> Não coleta dados pessoais sensíveis sem garantir a anonimização (LGPD).</li>
+                </ul>
             </div>
+
             <div class="card">
-                <h3 class="card-title">Feedback dos Usuários</h3>
-                <div class="feedback-list">
-                    <div class="feedback-item">
-                        <div class="feedback-text">"Plataforma intuitiva e muito eficiente!"</div>
-                        <div class="feedback-author">— Professor - Matemática</div>
+                <h2 class="card-title">1. KPIs Técnicos: Qualidade e Desempenho da IA</h2>
+                <p class="card-text">Estes indicadores avaliam a robustez e eficiência da solução tecnológica:</p>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 16px;">
+                        <thead>
+                        <tr style="background-color: #232f3e; color: white;">
+                            <th style="padding: 12px; text-align: left; border: 1px solid #3c4d5f;">KPI</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #3c4d5f;">Meta</th>
+                            <th style="padding: 12px; text-align: left; border: 1px solid #3c4d5f;">Avaliação</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Acurácia Preditiva</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">&gt; 80% de acerto na predição de risco.</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Garante a confiabilidade do modelo de Machine Learning.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Tempo de Resposta da API</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">&lt; 300 ms por requisição.</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Essencial para a usabilidade em tempo real (RNF02).</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Disponibilidade (Uptime)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">99,5% ou superior.</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Garante o acesso contínuo aos gestores (RNF04).</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd; font-weight: 600;">Taxa de Erros (HTTP 4xx/5xx)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">&lt; 1% de falhas.</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Mede a estabilidade do sistema.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">2. KPIs Educacionais: Impacto na Escola</h2>
+                <p class="card-text">Estes indicadores demonstram a contribuição do EduSense para a melhoria dos resultados educacionais:</p>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">5%</div>
+                        <div class="objective-text"><strong>Redução da Evasão Escolar:</strong> Meta de redução mínima de **5%** no primeiro ano de adoção da API.</div>
                     </div>
-                    <div class="feedback-item">
-                        <div class="feedback-text">"Facilitou muito o acompanhamento das turmas."</div>
-                        <div class="feedback-author">— Coordenador Pedagógico</div>
+                    <div class="objective-item">
+                        <div class="objective-number">1%</div>
+                        <div class="objective-text"><strong>Redução da Distorção Idade-Série:</strong> Meta de aumento de **+1%** ao ano no índice de alunos na etapa ideal.</div>
                     </div>
-                    <div class="feedback-item">
-                        <div class="feedback-text">"Excelente ferramenta para gestão acadêmica."</div>
-                        <div class="feedback-author">— Diretor</div>
+                    <div class="objective-item">
+                        <div class="objective-number">3-8%</div>
+                        <div class="objective-text"><strong>Redução de Reprovações:</strong> Meta de redução de **3% a 8%** ao ano (comparação pré/pós-implementação).</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">5%</div>
+                        <div class="objective-text"><strong>Aumento no Engajamento Escolar:</strong> Meta de **+5%** de melhora (medida por frequência e participação) nos primeiros 12 meses.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">70%</div>
+                        <div class="objective-text"><strong>Taxa de Uso e Adoção da API:</strong> Meta de **70% de adesão** por escolas, professores e gestores após 1 ano.</div>
                     </div>
                 </div>
             </div>
+
+            <div class="card">
+                <h2 class="card-title">🌟 Validação do MVP</h2>
+                <blockquote class="card-text">
+                    O Modelo de Machine Learning deve alcançar uma acurácia mínima aceitável (ex: 75%) e os Coordenadores Pedagógicos precisam utilizar a lista de alertas para iniciar ações preventivas em, pelo menos, <u>50% dos alunos de alto risco</u>.
+                </blockquote>
+            </div>
+
         </div>
     </main>
-</div>
+
 
 <script src="script.js"></script>
 </body>

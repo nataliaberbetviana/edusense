@@ -19,7 +19,7 @@ function showSection(sectionId, element) {
         'objectives': 'Objetivos',
         'methodology': 'Metodologia',
         'team': 'Equipe',
-        'results': 'Resultados'
+        'results': "KPI's - Indicadores de Sucesso"
     };
     document.getElementById('pageTitle').textContent = titles[sectionId];
 
