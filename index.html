@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação do Projeto - Edusence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header-left">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <svg class="logo" viewBox="0 0 24 24" fill="none">
+            <path d="M6 12L10 8L14 12L18 8" stroke="#ff9900" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 16L10 12L14 16L18 12" stroke="#ff9900" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="header-title">Apresentação do Projeto - EduSense</span>
+    </div>
+    <div class="header-right">
+        <span class="header-icon">?</span>
+        <span class="header-icon">🔔</span>
+        <div class="header-divider"></div>
+        <span class="header-region">Brasil</span>
+        <div class="header-avatar">ES</div>
+    </div>
+</header>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<!-- Container -->
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">Navegação</div>
+        <a class="nav-item active" onclick="showSection('overview', this)">
+            <span class="nav-icon">📄</span>
+            <span>Visão Geral</span>
+        </a>
+        <a class="nav-item" onclick="showSection('objectives', this)">
+            <span class="nav-icon">🎯</span>
+            <span>Objetivos</span>
+        </a>
+        <a class="nav-item" onclick="showSection('methodology', this)">
+            <span class="nav-icon">💻</span>
+            <span>Metodologia</span>
+        </a>
+        <a class="nav-item" onclick="showSection('team', this)">
+            <span class="nav-icon">👥</span>
+            <span>Equipe</span>
+        </a>
+        <a class="nav-item" onclick="showSection('results', this)">
+            <span class="nav-icon">📊</span>
+            <span>Resultados</span>
+        </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title" id="pageTitle">Visão Geral</h1>
+
+        <!-- Overview Section -->
+        <div id="overview" class="content-section active">
+            <div class="card">
+                <h2 class="card-title">Sistema de Gerenciamento Escolar</h2>
+                <p class="card-text">
+                    Este projeto apresenta o desenvolvimento de uma Interface de Programação de Aplicações (API) para a Análise de Desempenho Escolar, com o objetivo de Identificação de Fatores de Risco. Esta ferramenta visa identificar, de forma preditiva e automatizada, estudantes com potencial risco de declínio de rendimento, atraso no percurso escolar ou evasão, proporcionando, assim, suporte analítico para a implementação de intervenções pedagógicas mais assertivas e eficazes.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-box" align="center">
+                        <div class="stat-value">Taxa de Escolarização - 93,4%</div>
+                        <div class="stat-label">Abaixo do patamar estabelecido pela LDB (Lei de Diretrizes e Based da Educação Nacional)</div>
+                    </div>
+                    <div class="stat-box" align="center">
+                        <div class="stat-value">Atraso escolar - 94.5%</div>
+                        <div class="stat-label">Abaixo da meta estabelecida pelo PNE</div>
+                    </div>
+                    <div class="stat-box" align="center">
+                        <div class="stat-value">18.5%</div>
+                        <div class="stat-label">15 a 19 anos não se encontram estudando ou trabalhando</div>
+                    </div>
+                </div>
+                </br>
+                <p class="card-text">
+                    Apesar do alto acesso à educação, o sistema enfrenta gargalos persistentes na qualidade, adequação série/idade e conclusão oportuna do ciclo educacional.
+                </p>
+                <ul class="card-text">
+                    <li>Problema Central: Milhões de jovens estão fora da etapa ideal de ensino ou sem a conclusão do Ensino Médio.</li>
+                    <li>Implicação: O sistema educacional, embora inclusivo no acesso, falha em identificar e intervir proativamente nos fatores que causam:
+                        <ul>
+                            <li>Abandono.</li>
+                            <li>Evasão.</li>
+                            <li>Distorção idade-série.</li>
+                        </ul>
+                    </li>
+                    <li>Consequência: Essa falha ameaça o desenvolvimento social e econômico do país.</li>
+                </ul>
+                <div class="card-text" align="center"><img src="img/tabela.png" width="1000" ></div>
+
+            </div>
+        </div>
+
+        <!-- Objectives Section -->
+        <div id="objectives" class="content-section">
+            <div class="card">
+                <h3 class="card-title">Objetivos do Projeto</h3>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">1</div>
+                        <div class="objective-text">Automatizar processos administrativos acadêmicos</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">2</div>
+                        <div class="objective-text">Melhorar a comunicação entre professores e alunos</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">3</div>
+                        <div class="objective-text">Centralizar informações em uma única plataforma</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">4</div>
+                        <div class="objective-text">Reduzir tempo de gestão de tarefas rotineiras</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">5</div>
+                        <div class="objective-text">Implementar análises e relatórios em tempo real</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodology Section -->
+        <div id="methodology" class="content-section">
+            <div class="card">
+                <h3 class="card-title">Tecnologias Utilizadas</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">React</div>
+                    <div class="tech-item">Node.js</div>
+                    <div class="tech-item">PostgreSQL</div>
+                    <div class="tech-item">Docker</div>
+                    <div class="tech-item">AWS</div>
+                    <div class="tech-item">TypeScript</div>
+                    <div class="tech-item">Redux</div>
+                    <div class="tech-item">Jest</div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Fases do Projeto</h3>
+                <div class="phase-list">
+                    <div class="phase-item">
+                        <div class="phase-number">1</div>
+                        <div class="phase-name">Análise de Requisitos</div>
+                        <div class="phase-status">Concluído</div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-number">2</div>
+                        <div class="phase-name">Design e Prototipação</div>
+                        <div class="phase-status">Concluído</div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-number">3</div>
+                        <div class="phase-name">Desenvolvimento</div>
+                        <div class="phase-status">Concluído</div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-number">4</div>
+                        <div class="phase-name">Testes</div>
+                        <div class="phase-status">Concluído</div>
+                    </div>
+                    <div class="phase-item">
+                        <div class="phase-number">5</div>
+                        <div class="phase-name">Implantação</div>
+                        <div class="phase-status">Concluído</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div id="team" class="content-section">
+            <div class="team-grid">
+                <div class="card">
+                    <div class="team-member">
+                        <div class="member-avatar">JJ</div>
+                        <div class="member-info">
+                            <div class="member-name">João José</div>
+                            <div class="member-role">System Analyst</div>
+                            <a href="mailto:ana.silva@email.com" class="member-email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="team-member">
+                        <div class="member-avatar">JV</div>
+                        <div class="member-info">
+                            <div class="member-name">João Vitor</div>
+                            <div class="member-role">Cloud Computing</div>
+                            <a href="https://www.linkedin.com/in/jo%C3%A3ovitor-alvessilva/" class="member-email">joãovitor-alvessilva</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="team-member">
+                        <div class="member-avatar">JL</div>
+                        <div class="member-info">
+                            <div class="member-name">Jorge Lázaro</div>
+                            <div class="member-role"></div>
+                            <a href="mailto:maria.oliveira@email.com" class="member-email"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="team-member">
+                        <div class="member-avatar">LP</div>
+                        <div class="member-info">
+                            <div class="member-name">Larissa Pavan</div>
+                            <div class="member-role">Software Engineer</div>
+                            <a href="https://www.linkedin.com/in/larissacpavan/" class="member-email">larissacpavan</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="team-member">
+                    <div class="member-avatar">NV</div>
+                    <div class="member-info">
+                        <div class="member-name">Natalia Viana</div>
+                        <div class="member-role">Análise de Dados</div>
+                        <a href="https://www.linkedin.com/in/nataliaberbetviana/" class="member-email">nataliaberbetviana</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="team-member">
+                    <div class="member-avatar">YX</div>
+                    <div class="member-info">
+                        <div class="member-name">Yara Xavier</div>
+                        <div class="member-role">Software Engineer</div>
+                        <a href="https://www.linkedin.com/in/arenamalika/" class="member-email">arenamalika</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results" class="content-section">
+            <div class="card">
+                <h3 class="card-title">Principais Conquistas</h3>
+                <div class="progress-list">
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Redução de tempo administrativo</span>
+                            <span class="progress-value">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Satisfação dos usuários</span>
+                            <span class="progress-value">92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Cobertura de testes</span>
+                            <span class="progress-value">85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-header">
+                            <span>Performance (tempo de resposta)</span>
+                            <span class="progress-value">&lt; 200ms</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card-title">Feedback dos Usuários</h3>
+                <div class="feedback-list">
+                    <div class="feedback-item">
+                        <div class="feedback-text">"Plataforma intuitiva e muito eficiente!"</div>
+                        <div class="feedback-author">— Professor - Matemática</div>
+                    </div>
+                    <div class="feedback-item">
+                        <div class="feedback-text">"Facilitou muito o acompanhamento das turmas."</div>
+                        <div class="feedback-author">— Coordenador Pedagógico</div>
+                    </div>
+                    <div class="feedback-item">
+                        <div class="feedback-text">"Excelente ferramenta para gestão acadêmica."</div>
+                        <div class="feedback-author">— Diretor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
